@@ -2,6 +2,12 @@
 
 COZI_MENU = "\c[Brown]ⓒ\c- Offworld Wares Options";
 
+// Menu Option Values
+MENU_ENABLED="Enabled";
+MENU_DISABLED="Disabled";
+MENU_REPLACEALL="Replace All";
+MENU_WITHALL="With All";
+
 TAG_TRITEBARREL = "Barrel";
 
 [en enc eng eni ena enz default]

@@ -22,7 +22,7 @@ OptionMenu Trites
     StaticText ""
 	StaticText "Spawn Options", "Green"
     StaticText  "Control the spawn rate of Trite Barrels", "white"
-	ScaleSlider " Trite Barrel Spawn Rate: ", "sbrl_regulars_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider " Trite Barrel Spawn Rate: ", "sbrl_regulars_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset trite barrel options", "sbrl_reset_cvars"
  	StaticText ""
     StaticText  "Control whether replacements happen after a mapload.", "white"
@@ -43,7 +43,7 @@ OptionMenu musket
     StaticText ""
 	StaticText "Spawn Options", "Red"
     StaticText  "Control the spawn rate of the Musket on Clip Boxes", "white"
-	ScaleSlider " Musket Spawn Rate: ", "musket_clipbox_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider " Musket Spawn Rate: ", "musket_clipbox_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Musket options", "resetcvar musket_clipbox_spawn_bias"
  	StaticText ""
 	StaticText "Enable/Disable the Musket from spawning in Backpacks.", "Red"
@@ -67,7 +67,7 @@ OptionMenu Flintlock
     StaticText ""
 	StaticText "Spawn Options", "Red"
     StaticText  "Control the spawn rate of the Flintlock on Clip Boxes", "white"
-	ScaleSlider " Flintlock Spawn Rate: ", "flint_clipbox_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider " Flintlock Spawn Rate: ", "flint_clipbox_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Flintlock options", "resetcvar flint_clipbox_spawn_bias"
  	StaticText ""
 	StaticText "Enable/Disable the Flintlock from spawning in Backpacks.", "Red"
@@ -91,23 +91,23 @@ OptionMenu rum
     StaticText ""
 	StaticText "Spawn Options", "Orange"
     StaticText  "Control the spawn rate of Rum on Medikits", "white"
-	ScaleSlider " Medikit Spawn Rate: ", "rum_pmi_spawn_Bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider " Medikit Spawn Rate: ", "rum_pmi_spawn_Bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Rum options", "resetcvar rum_pmi_spawn_bias"
 	StaticText ""
     StaticText  "Control the spawn rate of Cigarette Packs", "white"
-	ScaleSlider "Spawn Rate: ", "cpk_pmi_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "Spawn Rate: ", "cpk_pmi_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Cigarette Pack options", "resetcvar cpk_pmi_spawn_bias"
 	StaticText ""
 	StaticText  "Control the spawn rate of Cigarettes", "white"
-	ScaleSlider "Spawn Rate: ", "cig_pmi_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "Spawn Rate: ", "cig_pmi_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Cigarette Pack options", "resetcvar cig_pmi_spawn_bias"
 	StaticText ""
 	StaticText  "Control the spawn rate of Cleanser Stims", "white"
-	ScaleSlider "Spawn Rate: ", "cleanser_pmi_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider "Spawn Rate: ", "cleanser_pmi_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Cleanser Stim options", "resetcvar cleanser_pmi_spawn_bias"
 	StaticText ""
     StaticText  "Control the spawn rate of Radsuit Packages on Radsuits", "white"
-	ScaleSlider " Radsuit Spawn Rate: ", "suit_replacement_spawn_bias", -1, 999, 1, "$MENU_REPLACEALL", "$MENU_DISABLED"
+	Slider " Radsuit Spawn Rate: ", "suit_replacement_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Radsuit options", "resetcvar suit_replacement_spawn_bias"
  	StaticText ""
     StaticText  "Control whether replacements happen after a mapload.", "white"
@@ -124,11 +124,11 @@ OptionMenu warebags
     Title "------ Backpack Options ------"
 	StaticText "Spawn Options", "Orange"
     StaticText  "Control the spawn rate of the Logistics Bag.", "white"
-	ScaleSlider " Logistics Bag Spawn Rate: ", "lgb_replacement_spawn_bias", -1, 999, 1, "$MENU_WITHALL", "$MENU_DISABLED"
+	Slider " Logistics Bag Spawn Rate: ", "lgb_replacement_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Logistics Bag options", "resetcvar lgb_replacement_spawn_bias"
  	StaticText ""
     StaticText  "Control the spawn rate of Medical Backpacks", "white"
-	ScaleSlider " Medical Bag Spawn Rate: ", "mdb_replacement_spawn_bias", -1, 999, 1, "$MENU_WITHALL", "$MENU_DISABLED"
+	Slider " Medical Bag Spawn Rate: ", "mdb_replacement_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Medical Bag options", "resetcvar mdb_replacement_spawn_bias"
  	StaticText ""
     StaticText  "Control whether replacements happen after a mapload.", "white"
@@ -146,7 +146,7 @@ OptionMenu warebags
     StaticText ""
 	StaticText "Spawn Options", "Orange"
     StaticText  "Control the spawn rate of the Universal Reloader", "white"
-	ScaleSlider " Universal Reloader Spawn Rate: ", "url_replacement_spawn_bias", -1, 999, 1, "$MENU_WITHALL", "$MENU_DISABLED"
+	Slider " Universal Reloader Spawn Rate: ", "url_replacement_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Universal Reloader options", "resetcvar url_replacement_spawn_bias"
  	StaticText ""
     StaticText  "Control whether replacements happen after a mapload.", "white"
@@ -164,7 +164,7 @@ OptionMenu apk
     StaticText ""
 	StaticText "Spawn Options", "Orange"
     StaticText  "Control the spawn rate of the Armor Patch Kit", "white"
-	ScaleSlider " Armor Patch Kit Spawn Rate: ", "apk_replacement_spawn_bias", -1, 999, 1, "$MENU_WITHALL", "$MENU_DISABLED"
+	Slider " Armor Patch Kit Spawn Rate: ", "apk_replacement_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Armor Patch Kit options", "resetcvar apk_replacement_spawn_bias"
  	StaticText ""
     StaticText  "Control whether replacements happen after a mapload.", "white"
@@ -182,7 +182,7 @@ OptionMenu dfb
     StaticText ""
 	StaticText "Spawn Options", 1
     StaticText  "Control the spawn rate of the Defibrillator", "white"
-	ScaleSlider " Defibrillator Spawn Rate: ", "dfb_replacement_spawn_bias", -1, 999, 1, "$MENU_WITHALL", "$MENU_DISABLED"
+	Slider " Defibrillator Spawn Rate: ", "dfb_replacement_spawn_bias",  0.0, 1000, .01, 3
 	SafeCommand "Reset Defibrillator options", "resetcvar dfb_replacement_spawn_bias"
  	StaticText ""
     StaticText  "Control whether replacements happen after a mapload.", "white"

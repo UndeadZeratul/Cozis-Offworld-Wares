@@ -58,5 +58,5 @@ addWeaponCrateFilter => { "name": "HD_FlintlockPistol", "allowed": "#flint_allow
 addWeaponCrateFilter => { "name": "HD_Musket", "allowed": "#musket_allowBackpacks" }
 
 // Monster Spawn Pools
-addSpawnTableSingleEntry => { "tableName": "BarrelReplaces", "name": "CeilingTriteBarrel", "weight": "#sbrl_regulars_spawn_bias", "persists": "#sbrl_persistent_spawning" }
-addSpawnTableSingleEntry => { "tableName": "BarrelReplaces", "name": "TriteBarrel", "weight": "#sbrl_regulars_spawn_bias", "persists": "#sbrl_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ExplosiveBarrelReplaces", "name": "CeilingTriteBarrel", "weight": "#sbrl_regulars_spawn_bias", "persists": "#sbrl_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ExplosiveBarrelReplaces", "name": "TriteBarrel", "weight": "#sbrl_regulars_spawn_bias", "persists": "#sbrl_persistent_spawning" }

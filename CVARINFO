@@ -55,3 +55,12 @@ server bool suit_persistent_spawning = false;
 server float dfb_replacement_spawn_bias = 20;
 server bool dfb_persistent_spawning = false;
 server bool dfb_drop_on_death = true;
+
+//-------------------------------------------------
+// Merchant Store Filters
+//-------------------------------------------------
+
+server bool hdm_enable_flintlock            = true;
+server bool hdm_enable_musket               = true;
+server bool hdm_enable_olerum               = true;
+server bool hdm_enable_portablecleanser     = true;

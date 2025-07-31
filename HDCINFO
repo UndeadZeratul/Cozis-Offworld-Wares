@@ -60,3 +60,9 @@ addWeaponCrateFilter => { "name": "HD_Musket", "allowed": "#musket_allowBackpack
 // Monster Spawn Pools
 addSpawnTableSingleEntry => { "tableName": "ExplosiveBarrelReplaces", "name": "CeilingTriteBarrel", "weight": "#sbrl_regulars_spawn_bias", "persists": "#sbrl_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "ExplosiveBarrelReplaces", "name": "TriteBarrel", "weight": "#sbrl_regulars_spawn_bias", "persists": "#sbrl_persistent_spawning" }
+
+// Merchant Store Entries
+newMerchantStoreItem => { "enabled": "#hdm_enable_flintlock", "type": "weapon", "category": "$MERCH_CAT_FLINTLOCK", "item": "HD_FlintlockPistol", "icon": "FLNTT0", "displayName": "$MERCH_TAG_FLINTLOCK", "basePrice": "120", "flavorText": "$MERCH_FLAVOR_FLINTLOCK" }
+newMerchantStoreItem => { "enabled": "#hdm_enable_musket", "type": "weapon", "category": "$MERCH_CAT_MUSKET", "item": "HD_Musket", "icon": "MSKTA0", "displayName": "$MERCH_TAG_MUSKET", "basePrice": "250", "flavorText": "$MERCH_FLAVOR_MUSKET" }
+newMerchantStoreItem => { "enabled": "#hdm_enable_olerum", "type": "item", "category": "$MERCH_CAT_BLUERUM", "item": "UaS_Alcohol_OleRum", "icon": "BTTLD0", "displayName": "$MERCH_TAG_BLUERUM", "basePrice": "400", "flavorText": "$MERCH_FLAVOR_BLUERUM" }
+newMerchantStoreItem => { "enabled": "#hdm_enable_portablecleanser", "type": "item", "category": "$MERCH_CAT_PORTABLECLEANSER", "item": "portablecleanser", "icon": "CLENA0", "displayName": "$MERCH_TAG_PORTABLECLEANSER", "basePrice": "400", "flavorText": "$MERCH_FLAVOR_PORTABLECLEANSER" }

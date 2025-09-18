@@ -8,6 +8,7 @@ weapons/musketrodin      muskrodi
 weapons/musketdust      muskdust
 weapons/musketcock      muskcock
 weapons/musketmake      musketmake
+weapons/musketmove      muskmove
 
 $Random weapons/musketmake { gear1 gear2 gear3 }
 gear1		gear1
